@@ -7,16 +7,16 @@ class Nodo:
         self.down1 = None
         self.down2 = None
         
-class cola:
+class lista:
     def __init__(self, nombre):
         self.nombre = nombre
         self.ini = None
         self.final = None
         
-def crearcola(nombre):
-    Cola = cola(nombre)
-    Cola.ini = Cola.final = None
-    return Cola
+def crearL(nombre):
+    List = lista(nombre)
+    List.ini = List.final = None
+    return List
 
 def creanodo(nombre):
     aux = Nodo(nombre)
@@ -24,7 +24,7 @@ def creanodo(nombre):
     return aux
 
 def listaenlazada1():
-    c1 = crearcola("lista de cargos")
+    c1 = crearL("lista de cargos")
     gerente = creanodo("Gerente")
     jefedeproyecto = creanodo("jefe de Proyecto")
     programador = creanodo("Programador")
@@ -37,7 +37,7 @@ def listaenlazada1():
     return c1
 
 def listaenlazada2(c1):
-    c2 = crearcola("Lista de roles")
+    c2 = crearL("Lista de roles")
     analista = creanodo("Analista")
     admin = creanodo("Administrador")
     auditor = creanodo("Auditor")
@@ -61,7 +61,7 @@ def listaenlazada2(c1):
     return c2
 
 def listaenlazada3(c2):
-    c3 = crearcola("Lista de Permisos")
+    c3 = crearL("Lista de Permisos")
     edicion = creanodo("Edicion de Archivos Gerenciales")
     progreso = creanodo("Administracion de Progreso")
     procesos = creanodo("Verificador de Procesos")
@@ -85,7 +85,7 @@ def listaenlazada3(c2):
     return c3
 
 def listaenlazada4(c3):
-    c4 = crearcola("Lista de personal")
+    c4 = crearL("Lista de personal")
     raul = creanodo("Raul Alvarez")
     ibai = creanodo("Ibai Llanos")
     ruben = creanodo("Ruben Doblas")

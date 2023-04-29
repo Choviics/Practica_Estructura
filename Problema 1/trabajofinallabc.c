@@ -3,7 +3,6 @@
 #include <string.h>
 
 
-
 typedef struct nodo{
 	char valor[40];
 	struct nodo *prev;
@@ -12,17 +11,20 @@ typedef struct nodo{
 	struct nodo *down1;
 	struct nodo *down2;
 }Nodo;
-typedef struct cola{
+
+typedef struct list{
 	char nombre [20];
 	Nodo *ini;
 	Nodo *final;
-}cola;
-cola *crearcola(char nombre[20]){
-	cola *Cola = (cola *) malloc(sizeof(cola));
-	Cola->ini = Cola->final = NULL;
-	strcpy(Cola->nombre, nombre);
-	return Cola;
+}list;
+
+list *crearL(char nombre[20]){
+	list *List = (list *) malloc(sizeof(list));
+	List->ini = List->final = NULL;
+	strcpy(List->nombre, nombre);
+	return List;
 }
+
 Nodo *creanodo(char nombre[40]){
 	Nodo *aux = (Nodo *) malloc(sizeof(Nodo));
 	strcpy(aux->valor,nombre);
@@ -33,8 +35,9 @@ Nodo *creanodo(char nombre[40]){
 	aux->down2 = NULL;
 	return aux;
 }
-cola *listaenlazada1(){
-	cola *c1 = crearcola("lista de cargos");
+
+list *listaenlazada1(){
+	list *c1 = crearL("lista de cargos");
 	Nodo *gerente = creanodo("Gerente");
 	Nodo *jefedeproyecto = creanodo("Jefe de proyecto");
 	Nodo *programador = creanodo("Programador");
@@ -46,8 +49,9 @@ cola *listaenlazada1(){
 	c1->final = programador;
 	return c1;	
 }
-cola *listaenlazada2(cola *c1){
-	cola *c2 = crearcola("Lista de roles");
+
+list *listaenlazada2(list *c1){
+	list *c2 = crearL("Lista de roles");
 	Nodo *analista = creanodo("Analista");
 	Nodo *admin = creanodo("Administrador");
 	Nodo *auditor = creanodo("Auditor");
@@ -72,10 +76,11 @@ cola *listaenlazada2(cola *c1){
 	
 	
 }
-cola *listaenlazada3(cola *c2){
-	cola *c3 = crearcola("Lista de permisos");
+
+list *listaenlazada3(list *c2){
+	list *c3 = crearL("Lista de permisos");
 	Nodo *edicion = creanodo("Edicion de archivos gerenciales");
-	Nodo *progreso = creanodo("Administracion de progeso");
+	Nodo *progreso = creanodo("Administracion de progreso");
 	Nodo *procesos = creanodo("Verificador de Procesos");
 	Nodo *empresa = creanodo("Edicion de programas empresariales");
 	c2->ini->down1 = edicion;
@@ -96,8 +101,9 @@ cola *listaenlazada3(cola *c2){
 	c3->final = empresa;
 	return c3;	
 }
-cola *listaenlazada4(cola *c3){
-	cola *c4 = crearcola("Lista de personal");
+
+list *listaenlazada4(list *c3){
+	list *c4 = crearL("Lista de personal");
 	Nodo *raul = creanodo("Raul Alvarez");
 	Nodo *ibai = creanodo("Ibai Llanos");
 	Nodo *ruben = creanodo("Ruben Doblas");
@@ -130,7 +136,8 @@ cola *listaenlazada4(cola *c3){
 	c4->final = juan;
 	return c4;
 }	
-Nodo *busqueda(cola *c1, cola *c2, cola *c3, cola *c4, char nombre[40]){
+
+Nodo *busqueda(list *c1, list *c2, list *c3, list *c4, char nombre[40]){
 	Nodo *aux = c1->ini;
 	while(strcmp(nombre, aux->valor)!=0){
 		aux = aux->next;
@@ -148,6 +155,7 @@ Nodo *busqueda(cola *c1, cola *c2, cola *c3, cola *c4, char nombre[40]){
 	return aux;
 	
 }
+
 Nodo *mostrarderecha(Nodo *principal){
 	Nodo *ndo = principal;
 	if(ndo->down2 != NULL){		
@@ -162,6 +170,7 @@ Nodo *mostrarderecha(Nodo *principal){
 	return principal;
 	
 }
+
 void mostrarnodos(Nodo *principal){
 	Nodo *aux = principal;
 
@@ -186,10 +195,10 @@ void mostrarnodos(Nodo *principal){
 
 int main (void){
 
-	cola *c1 = listaenlazada1();
-	cola *c2 = listaenlazada2(c1);
-	cola *c3 = listaenlazada3(c2);
-	cola *c4 = listaenlazada4(c3);
+	list *c1 = listaenlazada1();
+	list *c2 = listaenlazada2(c1);
+	list *c3 = listaenlazada3(c2);
+	list *c4 = listaenlazada4(c3);
 	char nombre[40];
 	printf("Escriba el nombre de un nodo: ");
 	scanf("%[^\n]", &nombre);
@@ -200,3 +209,4 @@ int main (void){
 	free(c3);
 	free(c4);
 }
+

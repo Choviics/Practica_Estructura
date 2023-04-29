@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/chovi/Desktop/Trabajo",
-      "program": "c:/Users/chovi/Desktop/Trabajo/build/Debug/outDebug",
+      "cwd": "c:/Users/chovi/Desktop/Practica_Estructura/Problema 1",
+      "program": "c:/Users/chovi/Desktop/Practica_Estructura/Problema 1/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
