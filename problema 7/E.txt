@@ -1,0 +1,78 @@
+1.3 2.8
+3.7 1.2
+3.6 5.1
+2.2 0.9
+4.5 3.1
+4.9 1.6
+2.8 4.2
+3.1 0.4
+3.9 2.5
+2.5 3.7
+A B 96
+B A 96
+A C 25
+C A 25
+A D 45
+D A 45
+A E 38
+E A 38
+A F 61
+F A 61
+A G 60
+G A 60
+A H 28
+H A 28
+A I 61
+I A 61
+A J 77
+J A 77
+B C 82
+C B 82
+B D 4
+D B 4
+B E 49
+E B 49
+B F 71
+F B 71
+B G 25
+G B 25
+B H 77
+H B 77
+B I 27
+I B 27
+B J 70
+J B 70
+C D 16
+D C 16
+C E 40
+E C 40
+C F 10
+F C 10
+C G 59
+G C 59
+C H 91
+H C 91
+C I 35
+I C 35
+C J 20
+J C 20
+E F 11
+F E 11
+E G 33
+G E 33
+E H 58
+H E 58
+F G 61
+G F 61
+F H 73
+H F 73
+F I 70
+I F 70
+G H 83
+H G 83
+G I 79
+I G 79
+H I 31
+I H 31
+I J 22
+J I 22
