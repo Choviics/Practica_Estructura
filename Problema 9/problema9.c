@@ -1,21 +1,15 @@
-// C program to find the length of the longest substring
-// without repeating characters
 #include <stdbool.h>
 #include <stdio.h>
 #include <string.h>
 
-// Find maximum between two numbers.
 int max(int num1, int num2)
 {
 	return (num1 > num2) ? num1 : num2;
 }
 
-// This function returns true if all characters in str[i..j]
-// are distinct, otherwise returns false
 bool areDistinct(char str[], int i, int j)
 {
 
-	// Note : Default values in visited are false
 	bool visited[26];
 	for(int i=0;i<26;i++)
 	visited[i]=0;
@@ -28,8 +22,6 @@ bool areDistinct(char str[], int i, int j)
 	return true;
 }
 
-// Returns length of the longest substring
-// with all distinct characters.
 int longestUniqueSubsttr(char str[])
 {
 	int n = strlen(str);
@@ -41,7 +33,6 @@ int longestUniqueSubsttr(char str[])
 	return res;
 }
 
-// Driver code
 int main()
 {
 	char str[50];
