@@ -1,3 +1,3 @@
 <h1>Salida del problema</h1>
 
-![imagen 1](https://prnt.sc/Mh_CUZJI2ziW){width=width height=height}
+[![Imagen 1](https://i.postimg.cc/65R4hWP3/Screenshot-1.png)](https://postimg.cc/SJSKShkF)
