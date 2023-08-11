@@ -8,4 +8,4 @@
 
 [![Imagen 7.](https://i.postimg.cc/50zXPGFT/Screenshot-9.png)](https://postimg.cc/HcpWn6z9)
 
-[![Imagen 7.](https://i.postimg.cc/prqRkYk3/Screenshot-10.png)](https://postimg.cc/N293jX3x)
+[![Imagen 7.](https://i.postimg.cc/g0FFVTmn/Screenshot-10.png)](https://postimg.cc/k2cp9wVm)
