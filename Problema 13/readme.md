@@ -1,4 +1,4 @@
-<h1>Resukltado del problema</h1>
+<h1>Resultado del problema</h1>
 
 Entrada
 
