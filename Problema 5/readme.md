@@ -1,5 +1,7 @@
 <h1>Salida del problema</h1>
 
+# Ejemplo
+
 Para este problema tienes multiples opciones, agregamos 4 trabajadores y revisamos sus posiciones.
 
 [![Imagen 5](https://i.postimg.cc/ZR7P6XpN/Screenshot-1.png)](https://postimg.cc/qhKCTbmB)
