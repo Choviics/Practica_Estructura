@@ -2,7 +2,7 @@
 
 Entrada
 
-[![Imagen 18](https://i.postimg.cc/hPNpvf9B/Screenshot-9.png)](https://postimg.cc/8jBhnkKK)
+[!Imagen 18](https://i.postimg.cc/qvdyWnsz/Screenshot-1.png)](https://postimg.cc/HVBryrPg)
 
 Salida
 
