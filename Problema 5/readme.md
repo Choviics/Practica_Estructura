@@ -1,6 +1,6 @@
 <h1>Salida del problema</h1>
 
-# Ejemplo
+<h3>Ejemplos</h3>
 
 Para este problema tienes multiples opciones, agregamos 4 trabajadores y revisamos sus posiciones.
 
